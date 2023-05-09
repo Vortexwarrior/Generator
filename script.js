@@ -23,21 +23,20 @@ function generatePassword() {
     return null;
   }
 
-  var passLowerCase = confirm("Do you want to use lower case letters?");
-  if (passLowerCase === true) {
+  var passLowerCaseConfirm = confirm("Do you want to use lower case letters?");
+  if (passLowerCaseConfirm === true) {
     userchoice += passLowerCase;
   }
-  var passUpperCase = confirm("Do you want to use upper case letters?");
-  if (passUpperCase === true) {
+  var passUpperCaseConfirm = confirm("Do you want to use upper case letters?");
+  if (passUpperCaseConfirm === true) {
     userchoice += passUpperCase;
   }
-  var passNumbers = confirm("Do you want to use numbers");
-  if (passNumbers === true) {
+  var passNumbersConfirm = confirm("Do you want to use numbers");
+  if (passNumbersConfirm === true) {
     userchoice += passNumbers;
   }
-  var passSpecial = confirm("Do you want to use special characters?"
-  );
-  if (passSpecial === true) {
+  var passSpecialConfirm = confirm("Do you want to use special characters?");
+  if (passSpecialConfirm === true) {
     userchoice += passSpecial;
   }
 
